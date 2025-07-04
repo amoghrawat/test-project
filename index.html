@@ -1,3 +1,49 @@
-this is HTML
-
-boiler plate
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Page</title>
+    <meta name="description" content="Your page description">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    
+    
+    
+    <link rel="preload" href="fonts/your-font.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    
+    
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <!-- Navigation items here -->
+        </nav>
+    </header>
+    
+    <!-- Main content -->
+    <main id="main-content">
+        <h1>Hogya Build</h1>
+        <p>Ha hogya</p>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
